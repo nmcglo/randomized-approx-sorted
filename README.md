@@ -8,7 +8,7 @@ Given a list `L` of `N` integers and a threshold `alpha`, decide whether `L` is
 **alpha-approximately-sorted**. Sortedness is measured with the
 *beta-pairwise* metric:
 
-$$\beta = \frac{|C|}{|P|}, \quad P=\\{(e_i,e_j) \mid i\lt j \\}, \quad C=\\{(e_i,e_j)\in P\mid e_i\le e_j\\}$$
+$$\beta = \frac{|C|}{|P|}, \quad P=\lbrace(e_i,e_j) \mid i\lt j \rbrace, \quad C=\lbrace(e_i,e_j)\in P\mid e_i\le e_j\rbrace$$
 
 Computing `beta` exactly costs `O(N^2)` pair comparisons (or `O(N log N)` by
 inversion counting). The randomized algorithm avoids that entirely.
