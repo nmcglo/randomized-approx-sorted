@@ -1,0 +1,16 @@
+[project]
+name = "randomized-approx-sort"
+version = "0.1.0"
+description = "Randomized estimation of how sorted a list is (beta-pairwise metric)"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "matplotlib>=3.8"]
+
+[project.scripts]
+approxsort = "approxsort.experiments:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/approxsort"]
